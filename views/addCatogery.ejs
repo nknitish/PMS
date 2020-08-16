@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./header') %>
+    <title>Add Catogery</title>
+</head>
+
+<body>
+ <%- include('./nav') %>
+
+ <div>
+    <form class="form-signin container" style="margin-top: 40px; width: 50%;" method="POST" >
+    
+      <h1 class="h3 mb-3 font-weight-normal">Add New Catogery</h1>
+      <h3 class="h5 mb-2 font-weight-normal" style="color: red;"><%=msg%></h3>
+      <label for="inputEmail" class="sr-only">Add new Catogery</label>
+      <input type="text" name="Catname" class="form-control" placeholder="Add new Catogery" required autofocus>
+      
+      <button class="btn btn-lg btn-primary btn-block" type="submit" style="margin-top: 10px;">ADD</button>
+      <a  href='/viewCatogery'>View All Catogery</a>
+
+    </form>
+  </div>
+ 
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://kit.fontawesome.com/5d75235202.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body class="text-center" style="margin-top: 60px;">
+    
+    <form  class="form-signin container" action="" method="POST" style="width: 50%; ">
+    
+      <h1 class="h3 mb-3 font-weight-normal">LOGIN PAGE</h1>
+      <h3 class="h5 mb-2 font-weight-normal" style="color: red;"><% if(msg!=''){ %>
+        <h1><%=msg%></h1>
+      <% } %></h3>
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input type="email" value="nknitish111@gmail.com" name="useremail" class="form-control" placeholder="Email address" required autofocus>
+      <label for="inputPassword"  class="sr-only">Password</label>
+      <input type="password" value="Password" name="userpassword" class="form-control" placeholder="Password" required>
+
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      <a href='/Registration'>Create New Account</a>
+      <p class="mt-5 mb-3 text-muted">&copy; 2020-2021</p>
+    </form>
+
+  </body>
+
+  </html>   

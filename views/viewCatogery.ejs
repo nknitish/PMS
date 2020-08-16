@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./header') %>
+    <title>View Catogery</title>
+</head>
+
+<body>
+ <%- include('./nav') %>
+
+  
+ <div class="table container m2"  style="margin-top: 10px;">
+    <h2>Password Catogery List</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Password Catogery Name</th>
+        
+          <th scope="col"><i class="fa fa-pencil" aria-hidden="true"></i></th>
+          <th scope="col"><i class="fa fa-trash-o" aria-hidden="true"></i></th>
+        </tr>
+      </thead>
+      <tbody>
+        <%
+         const t= data.map((data)=>{
+          %>
+          <tr>
+            <td><%=data.Catname%></td>
+            <td><a href='/Cat/edit/<%=data._id%>'><i class="fa fa-pencil" aria-hidden="false"></i> </a> </td>
+            <td><a href='/Cat/delete/<%=data._id%>'><i class="fa fa-trash-o" aria-hidden="false"></i></a></td>
+          </tr>
+
+        <% }) %>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>
+

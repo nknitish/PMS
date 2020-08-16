@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>REGISTRATION</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://kit.fontawesome.com/5d75235202.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body class="text-center" style="margin-top: 60px;">
+    <form class="form-signin container" method="POST" style="width: 50%;">
+    
+      <h1 class="h3 mb-3 font-weight-normal">REGISTRATION PAGE</h1>
+
+      <h3 class="h5 mb-2 font-weight-normal"><% if(msg!=''){ %>
+          <h3  style="color: red;"><%=msg%></h3>
+      <% } %></h3>
+
+      <label for="inputEmail" class="sr-only">Enter Name</label>
+      <input type="text" name="username" class="form-control" placeholder="Enter Name" required autofocus>
+
+      <label for="inputEmail" class="sr-only">Enter Email address</label>
+      <input type="email" name="useremail" class="form-control" placeholder="Email address" required autofocus>
+      
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" name="userpassword" class="form-control" placeholder="Password" required>
+      
+      <label for="inputPassword" class="sr-only">Conform Password</label>
+      <input type="password" name="cnfpassword" class="form-control" placeholder="Conform Password" required>
+
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
+      <a href='/'> Already Have  Account ?</a>
+      <p class="mt-5 mb-3 text-muted">&copy; 2020-2021</p>
+    </form>
+  </body>
+
+  </html>
